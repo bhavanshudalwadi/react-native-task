@@ -1,6 +1,6 @@
 import { View, Text, TouchableHighlight, StyleSheet, Image, ViewToken } from 'react-native'
 import React, { PropsWithChildren, memo } from 'react'
-import Animated, { SharedValue, useAnimatedStyle, withTiming } from 'react-native-reanimated';
+import Animated, { SharedValue, interpolate, useAnimatedStyle, withTiming } from 'react-native-reanimated';
 
 type MovieCardProps = {
     title: string,
@@ -21,7 +21,7 @@ const MovieCard: React.FC<MovieCardProps> = ({title, img, imdb_rating, date_of_r
         return {
             opacity: withTiming(isVisible ? 1 : 0),
             transform: [{
-                scale: withTiming(isVisible ? 1 : 0.6),
+                scale: withTiming(isVisible ? 1 : 0.3),
             }]
         };
     }, [])

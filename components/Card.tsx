@@ -19,14 +19,11 @@ export default function Card({children, title, img}: SectionProps): React.JSX.El
 
 const styles = StyleSheet.create({
     item: {
-        marginVertical: 8,
-        borderRadius: 10,
         borderWidth: 1,
-        borderColor: '#999',
+        borderColor: '#ccc',
         padding: 10,
-        width: 125,
+        width: 126,
         textAlign: 'center',
-        marginHorizontal: 6
     },
     title: {
         fontSize: 15,

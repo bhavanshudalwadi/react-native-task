@@ -1,6 +1,6 @@
 import { FlatList, ScrollView, StyleSheet, Text, View, ViewToken } from 'react-native'
 import React from 'react'
-import MovieCard from './MovieCard'
+import MovieCard from '../components/MovieCard'
 import { useSharedValue } from 'react-native-reanimated'
 
 const movieList = [
